@@ -6,7 +6,7 @@ export default function Footer() {
     <section className="bg-azulP py-6">
 
     </section>
-      <section className="py-6 bg-azulP border-t border-red-400">
+      <section className="py-6 bg-azulP border-t border-white">
         <div className="maxW">
           <p className="text-center text-sm text-white">Explorar Viagens - Todos os direitos reservados</p>
         </div>
