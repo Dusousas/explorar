@@ -13,7 +13,7 @@ export default function Cta() {
         <h2 className="text-center text-white text-4xl lg:text-5xl mt-6 ">
           Pronto para o próximo roteiro?
         </h2>
-        <p className="mt-6">
+        <p className="mt-6 text-white">
           Estudos do meio, trilhas e experiências guiadas por especialistas, com
           materiais didáticos e acompanhamento antes, durante e depois.
         </p>

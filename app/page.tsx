@@ -3,6 +3,7 @@ import Main from "@/components/Main";
 import Testimonials from "@/components/Testimonials";
 import Itineraries from "@/components/Itineraries";
 import Cta from "@/components/Cta";
+import Contact from "@/components/Contact";
 
 
 
@@ -13,5 +14,6 @@ export default function Home() {
     <Itineraries />
     <Cta />
     <Testimonials />
+    <Contact />
   </>;
 }
