@@ -11,7 +11,7 @@ import { roteiros } from "@/app/src/data/roteiros"; // ajuste o alias se necess√
 
 export default function Itineraries() {
   return (
-    <section className="py-20 bg-amareloP">
+    <section id="roteiros" className="py-20 bg-azulS">
       <div className="maxW">
         <h4 className="text-center text-white text-2xl lg:text-3xl">Roteiros</h4>
         <h2 className="text-center text-white text-4xl lg:text-5xl mt-4 mb-12">
@@ -28,32 +28,30 @@ export default function Itineraries() {
         >
           {roteiros.map((roteiro) => (
             <SwiperSlide key={roteiro.id}>
-              <div className="rounded-2xl p-4 overflow-hidden hover:bg-[#f2a727] transition-shadow duration-300 group flex flex-col h-[550px]">
+              <div className="rounded-2xl p-4 overflow-hidden hover:bg-azulP transition-shadow duration-300 group flex flex-col h-[550px]">
                 <div className="relative h-64 overflow-hidden">
                   <img
                     src={roteiro.image}
                     alt={roteiro.titulo}
                     className="w-full h-full object-cover rounded-3xl"
                   />
-                  <div className="absolute top-4 right-4 bg-white text-azulP px-4 py-2 rounded-full text-sm font-semibold">
-                    {roteiro.duracao}
-                  </div>
+
                 </div>
 
-                <div className="p-6 flex flex-col flex-grow">
-                  <p className="text-azulP text-sm font-semibold uppercase tracking-wide mb-2">
-                    {roteiro.subtitulo}
+                <div className="pt-4 flex flex-col flex-grow">
+                  <p className="text-white text-sm  tracking-widest uppercase tracking-wide mb-2">
+                    {roteiro.localizacao}
                   </p>
                   <h3 className="text-white text-2xl font-bold mb-3">
                     {roteiro.titulo}
                   </h3>
                   <p className="text-white text-sm leading-relaxed mb-6 flex-grow">
-                    {roteiro.descricao}
+                    {roteiro.subtitulo}
                   </p>
 
                   <Link
                     href={`/itinerarios/${roteiro.slug}`}
-                    className="w-full bg-azulP text-white text-center py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-300 mt-auto"
+                    className="w-full bg-azulP text-sm border border-azulP hover:border-white group-hover:border-white text-white text-center py-3 rounded-lg uppercase hover:bg-opacity-90 transition-all duration-300 mt-auto"
                   >
                     Ver Detalhes
                   </Link>

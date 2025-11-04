@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Services() {
   const camps = [
     {
@@ -8,15 +6,15 @@ export default function Services() {
       ages: "ages 11-13",
       image: "/card1.jpg",
       description: "Uma experiência incrível de acampamento para jovens aventureiros. Atividades ao ar livre, novas amizades e momentos inesquecíveis esperam por você!",
-      bgColor: "bg-yellow-400"
+      bgColor: "bg-azulP"
     },
     {
       id: 2,
-      title: "Adventure Camp",
-      ages: "ages 14-16",
+      title: "Sobre nós",
+      ages: "Vem explorar com a gente",
       image: "/card1.jpg",
       description: "Desafios emocionantes e aventuras radicais para adolescentes corajosos. Desenvolva habilidades de liderança e trabalho em equipe!",
-      bgColor: "bg-blue-400"
+      bgColor: "bg-azulP"
     },
     {
       id: 3,
@@ -24,7 +22,7 @@ export default function Services() {
       ages: "ages 17-19",
       image: "/card1.jpg",
       description: "Expedições intensas e exploração profunda da natureza. Prepare-se para uma jornada transformadora de autodescoberta!",
-      bgColor: "bg-green-400"
+      bgColor: "bg-azulP"
     }
   ];
 
@@ -32,7 +30,7 @@ export default function Services() {
     <>
       <section className="py-20 bg-white">
         <div className="maxW">
-          <h4 className="text-center text-amareloP text-2xl lg:text-3xl">
+          <h4 className="text-center text-verdeP text-2xl lg:text-3xl">
             Bem-vindo à
           </h4>
           <h2 className="text-center text-azulP text-4xl lg:text-5xl mt-4">

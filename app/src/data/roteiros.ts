@@ -3,8 +3,10 @@ export type Roteiro = {
   id: number;
   titulo: string;
   subtitulo: string;
-  duracao: string;
+  localizacao: string;
   descricao: string;
+  descricao1: string;
+  descricao2: string;
   image: string;
   slug: string;
 };
@@ -13,48 +15,41 @@ export const roteiros: Roteiro[] = [
   {
     id: 1,
     titulo: "Serra da Mantiqueira",
-    subtitulo: "Ecoturismo e Aventura",
-    duracao: "3 dias",
-    descricao: "Trilhas ecológicas, cachoeiras e biodiversidade da Mata Atlântica",
+    subtitulo: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    localizacao: "Minas Gerais",
+    descricao: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    descricao1: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    descricao2: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+
     image: "/card1.jpg",
     slug: "serra-da-mantiqueira",
   },
-  {
+    {
     id: 2,
-    titulo: "Pantanal Sul-Mato-Grossense",
-    subtitulo: "Estudo da Fauna",
-    duracao: "5 dias",
-    descricao: "Observação de animais silvestres e ecossistemas aquáticos",
+    titulo: "Serra da Mantiqueira",
+    subtitulo: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    localizacao: "Minas Gerais",
+    descricao: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    descricao1: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    descricao2: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+
     image: "/card1.jpg",
-    slug: "pantanal-sul-mato-grossense",
+    slug: "serra-da-mantiqueira",
   },
-  {
+
+    {
     id: 3,
-    titulo: "Parque Nacional Chapada Diamantina",
-    subtitulo: "Geografia e Geologia",
-    duracao: "4 dias",
-    descricao: "Formações rochosas, grutas e estudo do relevo brasileiro",
+    titulo: "Serra da Mantiqueira",
+    subtitulo: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    localizacao: "Minas Gerais",
+    descricao: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    descricao1: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    descricao2: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+
     image: "/card1.jpg",
-    slug: "chapada-diamantina",
+    slug: "serra-da-mantiqueira",
   },
-  {
-    id: 4,
-    titulo: "Pantanal Sul-Mato-Grossense (Fauna)",
-    subtitulo: "Estudo da Fauna",
-    duracao: "5 dias",
-    descricao: "Observação de animais silvestres e ecossistemas aquáticos",
-    image: "/card1.jpg",
-    slug: "pantanal-sul-mato-grossense-fauna",
-  },
-  {
-    id: 5,
-    titulo: "Parque Nac. Chapada Diamantina (Geologia)",
-    subtitulo: "Geografia e Geologia",
-    duracao: "4 dias",
-    descricao: "Formações rochosas, grutas e estudo do relevo brasileiro",
-    image: "/card1.jpg",
-    slug: "chapada-diamantina",
-  },
+
 ];
 
 export function getRoteiroBySlug(slug: string) {

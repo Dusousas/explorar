@@ -1,17 +1,13 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
   /* Cores (como já estava) */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-azulP:#217eb7;
-  --color-amareloP:#fcc044;
-  --color-verdeP:#8B9331;
+  --color-azulP:#386fb4;
+  --color-azulS: #6290c5;
+  --color-amareloP:#d2ab73;
+  --color-verdeP:#5eb140;
 
   /* Fontes vindas do next/font */
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
@@ -26,30 +22,14 @@
   --font-body: var(--font-aleo);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 body {
-  background: var(--background);
-  color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
 .maxW{
   max-width: 1420px;
   margin: 0 auto;
   padding: 0 2%;
-}
-
-.bgBanner1{
-  background-image: url('/slider_1.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 80vh;
 }
 
 .bgCta{
@@ -70,4 +50,47 @@ h1, h2{
 
 p{
   font-family: var(--font-aleo);
+}
+
+.bgBanner1 {
+  background-image: url('/slider_1.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: calc(100vh - 71px);
+
+  position: relative;
+  /* necessário p/ o ::before posicionar */
+  overflow: hidden;
+  /* corta as bordas do blur */
+}
+
+
+/* camada que reaproveita o mesmo background com blur */
+.bgBanner1::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  /* usa a mesma imagem e posicionamento */
+  filter: blur(4px);
+  /* ajuste a intensidade aqui */
+  transform: scale(1.06);
+  /* evita bordas transparentes do blur */
+  z-index: 0;
+}
+
+/* overlay opcional para contraste do texto */
+.bgBanner1::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, .50);
+  z-index: 1;
+}
+
+/* garante que o conteúdo fique acima do blur/overlay */
+.bgBanner1>* {
+  position: relative;
+  z-index: 2;
 }

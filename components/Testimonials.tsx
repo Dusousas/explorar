@@ -38,15 +38,15 @@ const testimonials: Testimonial[] = [
 
 export default function Testimonials() {
   return (
-    <section className="py-20 bg-verdeP">
+    <section className="py-20 bg-azulS">
       <div className="maxW">
-        <h4 className="text-center text-amareloP text-2xl lg:text-3xl">Depoimentos</h4>
+        <h4 className="text-center text-white text-2xl lg:text-3xl">Depoimentos</h4>
         <h2 className="text-center text-white text-4xl lg:text-5xl mt-4">
           Experiências de quem já foi
         </h2>
 
         <article className="mt-10">
-          <FaQuoteRight className="mx-auto text-amareloP text-3xl" />
+          <FaQuoteRight className="mx-auto text-white text-3xl" />
 
           <Swiper
             modules={[Autoplay, Pagination, Keyboard, A11y]}
@@ -62,7 +62,7 @@ export default function Testimonials() {
                   <p className="text-center mx-auto text-white lg:text-xl">
                     {item.text}
                   </p>
-                  <p className="text-center mt-8 text-amareloP font-semibold">
+                  <p className="text-center mt-8 text-white font-semibold">
                     {item.name}
                   </p>
                 </div>

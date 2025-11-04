@@ -5,7 +5,7 @@ export default function Contact() {
     <>
       <section className="py-20 bg-white">
         <div className="maxW">
-          <h4 className="text-center text-amareloP text-2xl lg:text-3xl">
+          <h4 className="text-center text-verdeP text-2xl lg:text-3xl">
             Dúvidas?
           </h4>
           <h2 className="text-center text-4xl lg:text-5xl mt-4 text-azulP">
