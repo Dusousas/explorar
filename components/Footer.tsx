@@ -7,11 +7,29 @@ export default function Footer() {
             <img className="w-[140px]" src="/logo-explorar1.png" alt="" />
           </a>
         </div>
-<div className="flex gap-4 justify-center mt-4">
-  <a href=""><img className="w-[24px]" src="/icons/instagram.png" alt="Instagram" /></a>
-  <a href=""><img className="w-[24px]" src="/icons/facebook.png" alt="Instagram" /></a>
-
-</div>
+        <div className="flex gap-4 justify-center mt-4">
+          <a href="">
+            <img
+              className="w-[24px]"
+              src="/icons/instagram.png"
+              alt="Instagram"
+            />
+          </a>
+          <a href="">
+            <img
+              className="w-[24px]"
+              src="/icons/facebook.png"
+              alt="Facebook"
+            />
+          </a>
+          <a href="">
+            <img
+              className="w-[24px]"
+              src="/icons/gmail.png"
+              alt="Gmail"
+            />
+          </a>
+        </div>
       </section>
       <section className="py-6 bg-azulP border-t border-white">
         <div className="maxW">
