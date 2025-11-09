@@ -5,21 +5,37 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Wpp from "@/components/subc/Wpp";
 
-const grandHotel = Grand_Hotel({ weight: "400", subsets: ["latin"], variable: "--font-grand-hotel", display: "swap" });
-const luckiestGuy = Luckiest_Guy({ weight: "400", subsets: ["latin"], variable: "--font-luckiest-guy", display: "swap" });
-const aleo = Aleo({ weight: ["300", "400", "700"], subsets: ["latin"], variable: "--font-aleo", display: "swap" });
+const grandHotel = Grand_Hotel({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-grand-hotel",
+  display: "swap",
+});
+const luckiestGuy = Luckiest_Guy({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-luckiest-guy",
+  display: "swap",
+});
+const aleo = Aleo({
+  weight: ["300", "400", "700"],
+  subsets: ["latin"],
+  variable: "--font-aleo",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
-  title: "Explorar Viagens",
+  title: "Explorar Viagens | Viagens pedagógicas e de ecoturismo",
   description: "Explore viagens incríveis com a gente",
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="pt-BR">
       <body
         className={[
-
           grandHotel.variable,
           luckiestGuy.variable,
           aleo.variable,
