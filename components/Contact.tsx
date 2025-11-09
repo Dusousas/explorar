@@ -3,7 +3,7 @@ import Form from "./subc/Form";
 export default function Contact() {
   return (
     <>
-      <section className="py-20 bg-white">
+      <section id="contato" className="py-20 bg-white">
         <div className="maxW">
           <h4 className="text-center text-verdeP text-2xl lg:text-3xl">
             Dúvidas?

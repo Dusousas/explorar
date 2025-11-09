@@ -23,7 +23,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           grandHotel.variable,
           luckiestGuy.variable,
           aleo.variable,
-          "antialiased min-h-screen flex flex-col",
+          "antialiased  flex flex-col",
         ].join(" ")}
       >
         <Header />

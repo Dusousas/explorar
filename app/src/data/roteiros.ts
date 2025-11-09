@@ -26,9 +26,9 @@ export const roteiros: Roteiro[] = [
   },
     {
     id: 2,
-    titulo: "Serra da Mantiqueira",
+    titulo: "São Paulo City Tour",
     subtitulo: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    localizacao: "Minas Gerais",
+    localizacao: "São Paulo",
     descricao: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     descricao1: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     descricao2: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
@@ -39,9 +39,9 @@ export const roteiros: Roteiro[] = [
 
     {
     id: 3,
-    titulo: "Serra da Mantiqueira",
+    titulo: "Brotas",
     subtitulo: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    localizacao: "Minas Gerais",
+    localizacao: "São Paulo",
     descricao: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     descricao1: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     descricao2: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
