@@ -94,13 +94,13 @@ export default function Navbar() {
                   <div className="flex items-center gap-1">
                     {/* Label que rola pra seção services */}
                     {item.isSection && item.href ? (
-                      <Link
+                      <a
                         href="/"
                         className="hover:text-azulP/70 transition-colors cursor-pointer"
                         onClick={(e) => handleSectionClick(e, item.href!)}
                       >
                         {item.label}
-                      </Link>
+                      </a>
                     ) : (
                       <span className="hover:text-azulP/70 transition-colors cursor-pointer">
                         {item.label}
@@ -122,31 +122,31 @@ export default function Navbar() {
                     "
                   >
                     {item.children.map((child) => (
-                      <Link
+                      <a
                         key={child.href}
                         href={child.href}
                         className="block px-4 py-2 uppercase text-sm normal-case text-azulP hover:bg-black/5"
                       >
                         {child.label}
-                      </Link>
+                      </a>
                     ))}
                   </div>
                 </>
               ) : item.isSection && item.href ? (
-                <Link
+                <a
                   href="/"
                   className="hover:text-azulP/70 transition-colors cursor-pointer"
                   onClick={(e) => handleSectionClick(e, item.href!)}
                 >
                   {item.label}
-                </Link>
+                </a>
               ) : item.href ? (
-                <Link
+                <a
                   href={item.href}
                   className="hover:text-azulP/70 transition-colors"
                 >
                   {item.label}
-                </Link>
+                </a>
               ) : null}
             </li>
           ))}
@@ -239,7 +239,7 @@ export default function Navbar() {
                       <ul className="mt-1 space-y-1 text-sm normal-case">
                         {item.children.map((child) => (
                           <li key={child.href}>
-                            <Link
+                            <a
                               href={child.href}
                               onClick={() => {
                                 setOpen(false);
@@ -248,28 +248,28 @@ export default function Navbar() {
                               className="block px-6 py-2 rounded-lg hover:bg-black/5"
                             >
                               {child.label}
-                            </Link>
+                            </a>
                           </li>
                         ))}
                       </ul>
                     )}
                   </>
                 ) : item.isSection && item.href ? (
-                  <Link
+                  <a
                     href="/"
                     onClick={(e) => handleSectionClick(e, item.href!)}
                     className="block px-3 py-3 rounded-lg hover:bg-black/5"
                   >
                     {item.label}
-                  </Link>
+                  </a>
                 ) : item.href ? (
-                  <Link
+                  <a
                     href={item.href}
                     onClick={() => setOpen(false)}
                     className="block px-3 py-3 rounded-lg hover:bg-black/5"
                   >
                     {item.label}
-                  </Link>
+                  </a>
                 ) : null}
               </li>
             ))}

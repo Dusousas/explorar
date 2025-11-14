@@ -1,5 +1,6 @@
 "use client";
 
+import { motion, useReducedMotion } from "framer-motion";
 import React, { useState } from "react";
 
 const SUBTOPICS = [
@@ -166,6 +167,12 @@ const SUBTOPICS = [
 ] as const;
 
 export default function PedagogicasPage() {
+    const prefersReduced = useReducedMotion();
+
+  // Dividir o texto em caracteres mantendo os espaços
+  const text = "Aprender pode ser divertido!";
+  const characters = text.split("");
+
   const [activeId, setActiveId] = useState<(typeof SUBTOPICS)[number]["id"]>(
     SUBTOPICS[0].id
   );
@@ -189,6 +196,29 @@ export default function PedagogicasPage() {
             página para ficar prático de comparar e decidir.
           </p>
         </div>
+
+        
+          <h4 className="text-verdeP text-center tracking-wider text-2xl lg:text-3xl">
+            {characters.map((char, index) => (
+              <motion.span
+                key={index}
+                style={{ display: "inline-block" }}
+                initial={prefersReduced ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={
+                  prefersReduced
+                    ? { duration: 0 }
+                    : {
+                        duration: 0.5,
+                        delay: index * 0.05,
+                        ease: "easeOut",
+                      }
+                }
+              >
+                {char === " " ? "\u00A0" : char}
+              </motion.span>
+            ))}
+          </h4>
 
         <div className="grid gap-3 md:grid-cols-5">
           {SUBTOPICS.map((topic) => {
