@@ -4,14 +4,18 @@
   /* Cores (como já estava) */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-azulP:#386fb4;
+  --color-azulP: #386fb4;
   --color-azulS: #6290c5;
-  --color-amareloP:#d2ab73;
-  --color-verdeP:#5eb140;
+  --color-amareloP: #d2ab73;
+  --color-verdeP: #5eb140;
 
   /* Fontes vindas do next/font */
-  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  --font-sans:
+    var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system, Segoe UI,
+    Roboto, Arial, sans-serif;
+  --font-mono:
+    var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo, Monaco,
+    Consolas, "Liberation Mono", monospace;
   /* Novas fontes */
   --font-grand-hotel: var(--font-grand-hotel), cursive;
   --font-luckiest-guy: var(--font-luckiest-guy), cursive;
@@ -22,38 +26,38 @@
   --font-body: var(--font-aleo);
 }
 
-
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-.maxW{
+.maxW {
   max-width: 1420px;
   margin: 0 auto;
   padding: 0 2%;
 }
 
-.bgCta{
-  background-image: url('/image-3.jpg');
+.bgCta {
+  background-image: url("/image-3.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 60vh;
-} 
+}
 
-h4{
+h4 {
   font-family: var(--font-grand-hotel);
 }
 
-h1, h2{
+h1,
+h2 {
   font-family: var(--font-luckiest-guy);
 }
 
-p{
+p {
   font-family: var(--font-aleo);
 }
 
 .bgBanner1 {
-  background-image: url('/slider_1.jpg');
+  background-image: url("/slider_1.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -64,7 +68,6 @@ p{
   overflow: hidden;
   /* corta as bordas do blur */
 }
-
 
 /* camada que reaproveita o mesmo background com blur */
 .bgBanner1::before {
@@ -85,12 +88,17 @@ p{
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, .50);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
 /* garante que o conteúdo fique acima do blur/overlay */
-.bgBanner1>* {
+.bgBanner1 > * {
   position: relative;
   z-index: 2;
+}
+
+.bgSlug {
+  background-image: url("/bg.png");
+  background-size: contain;
 }
