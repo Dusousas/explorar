@@ -44,7 +44,7 @@ export default async function RoteiroPage({
   return (
     <main className="relative overflow-hidden py-20 bg-gray-100 bgSlug">
       {/* ✅ OVERLAY */}
-      <div className="pointer-events-none absolute inset-0 z-0 bg-gray-100/80" />
+      <div className="pointer-events-none absolute inset-0 z-0 bg-gray-100/80 " />
 
       {/* ✅ Conteúdo acima da overlay */}
       <div className="relative z-10">
